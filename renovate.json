@@ -1,0 +1,27 @@
+{
+    "extends": ["config:base"],
+    "packageRules": [
+        {
+            "packagePatterns": ["^eslint"],
+            "groupName": "eslint"
+        },
+        {
+            "packagePatterns": ["gatsby"],
+            "groupName": "gatsby"
+        },
+        {
+            "packageNames": ["react", "react-dom"],
+            "groupName": "react"
+        },
+        {
+            "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+            "automerge": true
+        }
+    ],
+    "labels": ["renovate"],
+    "prHourlyLimit": 16,
+    "prConcurrentLimit": 16,
+    "rangeStrategy": "bump",
+    "bumpVersion": null,
+    "semanticCommits": true
+}
