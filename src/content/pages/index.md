@@ -1,13 +1,15 @@
 ---
 template: index-page
 slug: /
-title: Wyatt Morriss
-tagline: Graphic Designer
-featuredImage: /assets/toa-heftiba-0rlfirsdvzu-unsplash.jpg
+title: Anup Dhakal
+tagline: Software Developer
+featuredImage: /assets/anupdhakal-sideway.jpg
 cta:
     ctaText: Know more
     ctaLink: /about
 ---
 
-He is a award winning gaming graphic designer, based in sunny side of
-California. Working as Principal designer at Bethesda
+He is a Kathmandu-based software developer, who loves working remotely!
+Currently at [Penji](https://www.penjiapp.com/). Previously at
+[Technorio](https://technorio.com/), [Microsoft](https://www.microsoft.com) and
+[Leapfrog](https://www.lftechnology.com/).
