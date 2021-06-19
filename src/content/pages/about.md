@@ -15,7 +15,7 @@ am working on turning your ideas into reality.
 
 ![Picture of Anup](/assets/anupdhakal.jpg)
 
-#### Why you should choose me
+### Why you should choose me
 
 -   I am a highly experienced engineer with a vast array of skills under my
     belt.
@@ -27,7 +27,7 @@ am working on turning your ideas into reality.
 -   I write high quality, well-engineered and organized code.
 -   I self-review and test my work multiple times before I submit it.
 
-#### My specialties include
+### My specialties include
 
 -   Single Page Application (SPA) development
 -   RESTful API design and development (confirming to JSON:API spec if needed)
@@ -37,7 +37,7 @@ am working on turning your ideas into reality.
 -   Code quality inspection and pull requests review
 -   Docker and CI/CD setup
 
-#### I am proficient with
+### I am proficient with
 
 -   General purpose - JavaScript, TypeScript
 -   Frontend - HTML5, CSS3, SASS/SCSS, LESS, JQuery, decent understanding of UX
@@ -46,7 +46,7 @@ am working on turning your ideas into reality.
 -   Tooling - Webpack, Git, Linters, Bash, Github Actions, CI/CD, Docker
 -   Hosting - Netlify, Heroku, Vercel, AWS, Github Pages
 
-#### In addition to the skills mentioned above, I have limited experience in
+### In addition to the skills mentioned above, I have limited experience in
 
 -   Gatsby, PHP (Laravel, Codeigniter), Svelte, VueJS, NextJS
 -   NestJS, MongoDB, Elm, Elixir (Phoenix), Rollup, GCS, etc.
