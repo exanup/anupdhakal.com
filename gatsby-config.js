@@ -49,6 +49,18 @@ module.exports = {
                 plugins: [
                     netlifyCmsPaths,
                     {
+                        resolve: `gatsby-remark-table-of-contents`,
+                        options: {
+                            exclude: 'Table of Contents',
+                            tight: false,
+                            ordered: true,
+                            fromHeading: 2,
+                            toHeading: 6,
+                            className: 'table-of-contents',
+                        },
+                    },
+                    'gatsby-remark-autolink-headers',
+                    {
                         resolve: `gatsby-remark-images`,
                         options: {
                             maxWidth: 1024,

@@ -16,10 +16,9 @@ tags:
     - 'Web Development'
 ---
 
--   [The first transition](#the-first-transition)
--   [The digital age](#the-digital-age)
--   [Loss of humanity through transitions](#loss-of-humanity-through-transitions)
--   [Chasing perfection](#chasing-perfection)
+```toc
+# This code block gets replaced with the TOC
+```
 
 The typography of this industrial age was no longer handcrafted. Mass production
 and profit became more important. Quantity mattered more than the quality. The
