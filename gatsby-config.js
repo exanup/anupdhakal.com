@@ -68,7 +68,9 @@ module.exports = {
                         options: {
                             maxWidth: 1024,
                             showCaptions: true,
-                            linkImagesToOriginal: false,
+                            linkImagesToOriginal: true,
+                            withWebp: true,
+                            withAvif: true,
                             tracedSVG: true,
                             loading: 'lazy',
                         },
