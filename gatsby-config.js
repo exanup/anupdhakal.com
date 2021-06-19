@@ -121,7 +121,35 @@ module.exports = {
                 },
             },
         },
-        `gatsby-plugin-sitemap`,
+        {
+            resolve: 'gatsby-plugin-sitemap',
+            options: {
+                query: `
+                {
+                    site {
+                      siteMetadata {
+                        siteUrl
+                      }
+                    }
+                    allSitePage(
+                      filter: {path: {regex: "/^(?!/404/|/thanks|/404.html|/dev-404-page/)/"}}
+                    ) {
+                      nodes {
+                        path
+                      }
+                    }
+                  }
+              `,
+                output: '/sitemap',
+                resolveSiteUrl: ({ site }) => site.siteMetadata.siteUrl,
+                resolvePages: ({ allSitePage }) => allSitePage.nodes,
+                serialize: ({ path }) => ({
+                    url: path,
+                    changefreq: 'daily',
+                    priority: 0.7,
+                }),
+            },
+        },
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
