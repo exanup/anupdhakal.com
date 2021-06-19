@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import React from 'react'
 import { Link, graphql } from 'gatsby'
 import { RiArrowRightLine, RiArrowLeftLine } from 'react-icons/ri'
 import Layout from '../components/layout'
@@ -53,6 +52,7 @@ export const blogListQuery = graphql`
         }
     }
 `
+
 const Pagination = (props) => (
     <div className="pagination" sx={styles.pagination}>
         <ul>
@@ -66,6 +66,7 @@ const Pagination = (props) => (
                     </Link>
                 </li>
             )}
+
             {Array.from({ length: props.numPages }, (_, i) => (
                 <li key={`pagination-number${i + 1}`}>
                     <Link
@@ -80,6 +81,7 @@ const Pagination = (props) => (
                     </Link>
                 </li>
             ))}
+
             {!props.isLast && (
                 <li>
                     <Link to={props.nextPage} rel="next">
@@ -93,49 +95,59 @@ const Pagination = (props) => (
         </ul>
     </div>
 )
-class BlogIndex extends React.Component {
-    render() {
-        const { data } = this.props
-        const { currentPage, numPages } = this.props.pageContext
-        const blogSlug = '/blog/'
-        const isFirst = currentPage === 1
-        const isLast = currentPage === numPages
-        const prevPage =
-            currentPage - 1 === 1
-                ? blogSlug
-                : blogSlug + (currentPage - 1).toString()
-        const nextPage = blogSlug + (currentPage + 1).toString()
 
-        const posts = data.allMarkdownRemark.edges
-            .filter((edge) => !!edge.node.frontmatter.date)
-            .map((edge) => <PostCard key={edge.node.id} data={edge.node} />)
-        let props = {
-            isFirst,
-            prevPage,
-            numPages,
-            blogSlug,
-            currentPage,
-            isLast,
-            nextPage,
-        }
+const BlogIndex = ({ data, pageContext }) => {
+    const { currentPage, numPages } = pageContext
+    const blogSlug = '/blog/'
+    const isFirst = currentPage === 1
+    const isLast = currentPage === numPages
+    const prevPage =
+        currentPage - 1 === 1
+            ? blogSlug
+            : blogSlug + (currentPage - 1).toString()
+    const nextPage = blogSlug + (currentPage + 1).toString()
 
-        return (
-            <Layout className="blog-page">
-                <Seo
-                    title={'Blog — Page ' + currentPage + ' of ' + numPages}
-                    description={
-                        'Stackrole base blog page ' +
-                        currentPage +
-                        ' of ' +
-                        numPages
-                    }
-                />
-                <h1>Blog</h1>
-                <div className="grids col-1 sm-2 lg-3">{posts}</div>
-                <Pagination {...props} />
-            </Layout>
-        )
+    const filteredEdges = data.allMarkdownRemark.edges.filter(
+        (edge) => !!edge.node.frontmatter.date,
+    )
+
+    const posts = filteredEdges.map((edge) => (
+        <PostCard key={edge.node.id} data={edge.node} />
+    ))
+
+    const postTitles = filteredEdges.map((edge) => edge.node.frontmatter.title)
+    const postTitlesExcerpt =
+        [...postTitles, 'etc'].join(', ').slice(0, 150) + '...'
+
+    let props = {
+        isFirst,
+        prevPage,
+        numPages,
+        blogSlug,
+        currentPage,
+        isLast,
+        nextPage,
     }
+
+    return (
+        <Layout className="blog-page">
+            <Seo
+                title={'Blog — Page ' + currentPage + ' of ' + numPages}
+                description={
+                    'Anup Dhakal’s Blog - Page ' +
+                    currentPage +
+                    ' of ' +
+                    numPages +
+                    ' - ' +
+                    postTitlesExcerpt
+                }
+                image={'/assets/blog-laptop-by-jantine-doornbos-unsplash.jpg'}
+            />
+            <h1>Blog</h1>
+            <div className="grids col-1 sm-2 lg-3">{posts}</div>
+            <Pagination {...props} />
+        </Layout>
+    )
 }
 
 export default BlogIndex
