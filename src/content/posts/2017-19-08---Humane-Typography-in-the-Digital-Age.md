@@ -16,10 +16,6 @@ tags:
     - 'Web Development'
 ---
 
-```toc
-# This code block gets replaced with the TOC
-```
-
 The typography of this industrial age was no longer handcrafted. Mass production
 and profit became more important. Quantity mattered more than the quality. The
 books and printed works in general lost a part of its humanity. The typefaces
@@ -33,6 +29,10 @@ recognising the good in the other — the power of industrialism and the humanit
 of craftsmanship. This was the second transition that would strip typography of
 a part of its humanity. We have to go 500 years back in time to meet the first
 one.
+
+```toc
+# This code block gets replaced with the TOC
+```
 
 ## The first transition
 
