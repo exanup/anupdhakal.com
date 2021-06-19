@@ -103,8 +103,8 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Foundation`,
-                short_name: `Foundation`,
+                name: `Anup Dhakal`,
+                short_name: `Anup Dhakal`,
                 start_url: `/`,
                 background_color: `#f7f0eb`,
                 theme_color: `#a2466c`,
@@ -112,6 +112,53 @@ module.exports = {
                 icon: 'static' + settings.meta.iconimage,
             },
         },
+        {
+            resolve: 'gatsby-plugin-robots-txt',
+            options: {
+                host: settings.meta.siteUrl,
+                sitemap: `${settings.meta.siteUrl}/sitemap`,
+                resolveEnv: () => NETLIFY_ENV,
+                env: {
+                    production: {
+                        policy: [{ userAgent: '*' }],
+                    },
+                    'branch-deploy': {
+                        policy: [{ userAgent: '*', disallow: ['/'] }],
+                        sitemap: null,
+                        host: null,
+                    },
+                    'deploy-preview': {
+                        policy: [{ userAgent: '*', disallow: ['/'] }],
+                        sitemap: null,
+                        host: null,
+                    },
+                },
+            },
+        },
         'gatsby-plugin-offline',
+        {
+            resolve: 'gatsby-plugin-webfonts',
+            options: {
+                fonts: {
+                    google: [
+                        {
+                            family: 'Signika',
+                            variants: ['300', '600'],
+                            fontDisplay: 'swap',
+                            strategy: 'selfHosted',
+                        },
+                        {
+                            family: 'Faustina:ital',
+                            variants: ['0,400', '0,600', '1,400', '1,600'],
+                            fontDisplay: 'swap',
+                            strategy: 'selfHosted',
+                        },
+                    ],
+                },
+                useMinify: true,
+                usePreload: true,
+                usePreconnect: true,
+            },
+        },
     ],
 }

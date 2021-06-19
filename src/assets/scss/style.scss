@@ -228,7 +228,8 @@ article figure {
 article blockquote {
     margin-left: 0;
     padding: 5px 5px 5px 20px;
-    border-left: 3px solid rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    text-align: center;
 }
 article iframe {
     border: 2px solid black;
@@ -243,6 +244,19 @@ article img {
     padding: 20px;
     line-height: 1.5;
     font-size: 20px;
+    font-family: var(--font-family-serif);
+}
+figure {
+    display: block;
+    width: 100%;
+    height: auto;
+    blockquote p {
+        max-width: 40rem;
+        font-size: 1.89191rem;
+        margin-top: 0;
+        margin-bottom: 1.625rem;
+        line-height: 2.4375rem;
+    }
 }
 
 .blog-post {
