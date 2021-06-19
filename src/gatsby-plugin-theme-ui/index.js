@@ -8,6 +8,7 @@ const theme = {
         background: '#fff',
         primary: '#5C2941',
         accent: '#fff',
+        link: '#5C2941',
         muted: 'rgba(0, 0, 0, 0.7)',
         cardBg: '#fff',
         borderColor: '#540229',
@@ -21,10 +22,12 @@ const theme = {
         buttonHoverColor: lightness('siteColor', 0.8),
         modes: {
             dark: {
+                ...darkColors,
                 text: '#f5f5f5',
                 background: '#111',
                 primary: '#252525',
                 accent: '#5C2941',
+                link: '#e5c3d3',
                 muted: 'rgba(255, 255, 255, 0.7)',
                 cardBg: '#252525',
                 borderColor: '#888',
@@ -36,7 +39,6 @@ const theme = {
                 buttonColor: lightness('siteColor', 0.7),
                 buttonHoverBg: lightness('siteColor', 0.3),
                 buttonHoverColor: lightness('siteColor', 0.9),
-                ...darkColors,
             },
         },
     },
