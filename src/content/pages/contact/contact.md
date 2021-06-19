@@ -2,10 +2,16 @@
 template: contact-page
 slug: /contact
 title: Get in touch
+description:
+    Got feedback for me, want a suggestion, or just want to talk about anything
+    in general? I am happy to listen. Just send me a message using the form
+    below. You can also send me a DM on Twitter, or use any other means listed
+    on the homepage.
 ---
 
-Got a **feedback** for me, want a **suggestion**, or just anything in general? I
-am happy to talk.
+Got **feedback** for me, want a **suggestion**, or just want to talk **about
+anything** in general? I am happy to listen.
 
-Just send me a message using the form below or you can send me a DM on
-[Twitter](https://twitter.com/nup66)
+Just send me a message using the form below. You can also send me a DM on
+[Twitter](https://twitter.com/nup66), or use any other means listed on the
+[homepage](/).
