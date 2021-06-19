@@ -4,14 +4,19 @@ import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 const PostCard = ({ data }) => (
-    <article
-        className="post-card"
+    <Link
+        to={data.frontmatter.slug}
         sx={{
-            bg: 'cardBg',
+            variant: 'links.postLink',
         }}
     >
-        {data.frontmatter.featuredImage ? (
-            <Link to={data.frontmatter.slug}>
+        <article
+            className="post-card"
+            sx={{
+                bg: 'cardBg',
+            }}
+        >
+            {data.frontmatter.featuredImage ? (
                 <GatsbyImage
                     image={
                         data.frontmatter.featuredImage.childImageSharp
@@ -20,31 +25,25 @@ const PostCard = ({ data }) => (
                     alt={data.frontmatter.title + ' - Featured image'}
                     className="featured-image"
                 />
-            </Link>
-        ) : (
-            ''
-        )}
-        <div className="post-content">
-            <h2 className="title">
-                <Link
-                    to={data.frontmatter.slug}
+            ) : (
+                ''
+            )}
+            <div className="post-content">
+                <h2 className="title">{data.frontmatter.title}</h2>
+                <p
+                    className="meta"
                     sx={{
-                        variant: 'links.postLink',
+                        color: 'muted',
                     }}
                 >
-                    {data.frontmatter.title}
-                </Link>
-            </h2>
-            <p
-                className="meta"
-                sx={{
-                    color: 'muted',
-                }}
-            >
-                <time>{data.frontmatter.date}</time>
-            </p>
-        </div>
-    </article>
+                    <time>{data.frontmatter.date}</time>
+                </p>
+                <p className="description">
+                    <small>{data.frontmatter.description}</small>
+                </p>
+            </div>
+        </article>
+    </Link>
 )
 
 export default PostCard
