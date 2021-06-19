@@ -48,6 +48,7 @@ module.exports = {
                 gfm: true,
                 plugins: [
                     netlifyCmsPaths,
+                    'gatsby-remark-smartypants',
                     'gatsby-remark-external-links',
                     {
                         resolve: `gatsby-remark-table-of-contents`,
