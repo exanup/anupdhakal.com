@@ -147,7 +147,7 @@ module.exports = {
                     ],
                 },
                 useMinify: true,
-                usePreload: false,
+                usePreload: true,
                 usePreconnect: true,
             },
         },
