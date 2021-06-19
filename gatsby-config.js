@@ -24,6 +24,10 @@ const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
     siteMetadata: settings.meta,
+    flags: {
+        PRESERVE_FILE_DOWNLOAD_CACHE: true,
+        PRESERVE_WEBPACK_CACHE: true,
+    },
     plugins: [
         {
             resolve: `gatsby-source-filesystem`,
