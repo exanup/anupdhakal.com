@@ -168,7 +168,7 @@ collections:
                       - widget: image
                         name: image
                         label: image
-                        default: '/assets/stackrole.png'
+                        default: '/assets/anupdhakal-sideway.jpg'
                       - widget: image
                         name: iconimage
                         label: favicon
