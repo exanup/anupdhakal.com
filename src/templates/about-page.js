@@ -37,6 +37,7 @@ const AboutPage = ({ data }) => {
                 title={frontmatter.title}
                 description={description}
                 image={Image ? Image.images.fallback.src : null}
+                article={true}
             />
             <div className="wrapper">
                 <h1>{frontmatter.title}</h1>
