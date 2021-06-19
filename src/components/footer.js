@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import { Link } from 'gatsby'
 import { RiHeart2Line } from 'react-icons/ri'
 
 const Footer = () => (
@@ -17,9 +16,13 @@ const Footer = () => (
                     <RiHeart2Line />
                 </span>{' '}
                 by{' '}
-                <Link to="https://stackrole.com/" target="_blank">
+                <a
+                    href="https://stackrole.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     Stackrole.com
-                </Link>
+                </a>
             </p>
         </div>
     </footer>
