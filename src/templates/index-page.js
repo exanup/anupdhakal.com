@@ -89,121 +89,189 @@ const HomePage = ({ data }) => {
         return (
             <div key={'social icons' + index}>
                 {icons.icon === 'email' ? (
-                    <a href={icons.url}>
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiMailFill />
                     </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'facebook' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiFacebookBoxFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'twitter' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiTwitterFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'linkedin' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiLinkedinBoxFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'youtube' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiYoutubeFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'instagram' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiInstagramFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'rss' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiRssFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'github' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiGithubFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'telegram' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiTelegramFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'pinterest' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiPinterestFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'snapchat' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiSnapchatFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'skype' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiSkypeFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'wordpress' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <FaWordpress />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'dribbble' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiDribbbleFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'medium' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiMediumFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'behance' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <RiBehanceFill />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
                 {icons.icon === 'vk' ? (
-                    <Link to={icons.url} target="_blank">
+                    <a
+                        href={icons.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <FaVk />
-                    </Link>
+                    </a>
                 ) : (
                     ''
                 )}
