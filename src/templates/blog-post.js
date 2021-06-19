@@ -71,13 +71,14 @@ const Pagination = (props) => (
 )
 
 const Post = ({ data, pageContext }) => {
-    const { markdownRemark } = data // data.markdownRemark holds your post data
+    const { markdownRemark } = data
     const { frontmatter, html, excerpt } = markdownRemark
-    const { description } = frontmatter
+    const description = frontmatter.description || excerpt
 
     const Image = frontmatter.featuredImage
         ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
         : ''
+
     const { previous, next } = pageContext
 
     let props = {
@@ -89,10 +90,8 @@ const Post = ({ data, pageContext }) => {
         <Layout className="page">
             <Seo
                 title={frontmatter.title}
-                description={
-                    frontmatter.description ? frontmatter.description : excerpt
-                }
-                image={Image}
+                description={description}
+                image={Image ? Image.images.fallback.src : null}
                 article={true}
             />
             <article className="blog-post">
