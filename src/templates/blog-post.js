@@ -73,6 +73,7 @@ const Pagination = (props) => (
 const Post = ({ data, pageContext }) => {
     const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, html, excerpt } = markdownRemark
+    const { description } = frontmatter
 
     const Image = frontmatter.featuredImage
         ? frontmatter.featuredImage.childImageSharp.gatsbyImageData
@@ -110,6 +111,10 @@ const Post = ({ data, pageContext }) => {
                         ''
                     )}
                 </header>
+
+                <div className="blog-post-content description">
+                    <p>{description}</p>
+                </div>
 
                 <div
                     className="blog-post-content"
