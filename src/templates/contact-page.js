@@ -14,6 +14,7 @@ export const pageQuery = graphql`
             excerpt(pruneLength: 140)
             frontmatter {
                 title
+                description
             }
         }
         site {
@@ -27,12 +28,16 @@ export const pageQuery = graphql`
 const Contact = ({ data }) => {
     const { markdownRemark, site } = data // data.markdownRemark holds your post data
     const { frontmatter, html } = markdownRemark
+    const { description } = frontmatter
 
     return (
         <Layout className="contact-page" sx={contactStyles.contactPage}>
             <Seo
                 title={frontmatter.title}
-                description={frontmatter.title + ' ' + site.siteMetadata.title}
+                description={
+                    description ||
+                    frontmatter.title + ' - ' + site.siteMetadata.title
+                }
             />
             <div className="wrapper">
                 <h1>{frontmatter.title}</h1>
