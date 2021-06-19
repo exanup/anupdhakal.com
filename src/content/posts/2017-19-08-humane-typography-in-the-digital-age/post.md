@@ -7,7 +7,7 @@ description:
     An Essay on Typography by Eric Gill takes the reader back to the year 1930.
     The year when a conflict between two worlds came to its term. The machines
     of the industrial world finally took over the handicrafts.
-featuredImage: /assets/typography-by-kelly-sikkema-unsplash.jpg
+featuredImage: typography-by-kelly-sikkema-unsplash.jpg
 draft: false
 category: 'Typography'
 tags:
@@ -52,7 +52,7 @@ books emerged. People wanted books in a language they understood and they wanted
 books they could take with them. They were hungry for knowledge and printed
 books satisfied this hunger.
 
-![42-line-bible.jpg](/assets/42-line-bible.jpg)
+![42-line-bible.jpg](42-line-bible.jpg)
 
 _The 42–Line Bible, printed by Gutenberg._
 
@@ -119,7 +119,7 @@ We’ve come close to “perfection” in the last five centuries. The letters a
 crisp and without rough edges. We print our compositions with high–precision
 printers on a high quality, machine made paper.
 
-![type-through-time.jpg](/assets/type-through-time.jpg)
+![type-through-time.jpg](type-through-time.jpg)
 
 _Type through 5 centuries._
 
