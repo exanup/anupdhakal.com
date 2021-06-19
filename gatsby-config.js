@@ -209,7 +209,7 @@ module.exports = {
                     ],
                 },
                 useMinify: true,
-                usePreload: true,
+                usePreload: false,
                 usePreconnect: true,
             },
         },
