@@ -19,7 +19,7 @@ const Footer = () => (
                 <a
                     href="https://stackrole.com/"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="nofollow noopener noreferrer"
                 >
                     Stackrole.com
                 </a>
