@@ -37,3 +37,10 @@ a {
         text-decoration: underline;
     }
 }
+ul {
+    list-style: square;
+    li {
+        padding: 0 0.3125rem;
+        line-height: 1.625rem;
+    }
+}
