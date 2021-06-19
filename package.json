@@ -29,6 +29,7 @@
         "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
         "@theme-ui/color": "^0.9.1",
         "gatsby": "^3.7.2",
+        "gatsby-plugin-catch-links": "^3.7.1",
         "gatsby-plugin-google-gtag": "^3.7.1",
         "gatsby-plugin-image": "^1.7.1",
         "gatsby-plugin-manifest": "^3.7.1",
