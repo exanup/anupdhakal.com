@@ -7,7 +7,7 @@ description:
     An Essay on Typography by Eric Gill takes the reader back to the year 1930.
     The year when a conflict between two worlds came to its term. The machines
     of the industrial world finally took over the handicrafts.
-featuredImage: /assets/42-line-bible.jpg
+featuredImage: /assets/typography-by-kelly-sikkema-unsplash.jpg
 draft: false
 category: 'Typography'
 tags:
