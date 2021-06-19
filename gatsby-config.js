@@ -3,6 +3,11 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+
+require('dotenv').config({
+    path: `.env.${process.env.NODE_ENV}`,
+})
+
 const netlifyCmsPaths = {
     resolve: `gatsby-plugin-netlify-cms-paths`,
     options: {
@@ -23,7 +28,7 @@ const isNetlifyProduction = NETLIFY_ENV === 'production'
 const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
 
 module.exports = {
-    siteMetadata: settings.meta,
+    siteMetadata: { ...settings.meta, siteUrl },
     flags: {
         PRESERVE_FILE_DOWNLOAD_CACHE: true,
         PRESERVE_WEBPACK_CACHE: true,
@@ -53,6 +58,17 @@ module.exports = {
                 plugins: [
                     netlifyCmsPaths,
                     'gatsby-remark-smartypants',
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 1024,
+                            showCaptions: true,
+                            linkImagesToOriginal: true,
+                            withWebp: true,
+                            tracedSVG: true,
+                            loading: 'lazy',
+                        },
+                    },
                     'gatsby-remark-copy-linked-files',
                     'gatsby-remark-external-links',
                     {
@@ -67,18 +83,6 @@ module.exports = {
                         },
                     },
                     'gatsby-remark-autolink-headers',
-                    {
-                        resolve: `gatsby-remark-images`,
-                        options: {
-                            maxWidth: 1024,
-                            showCaptions: true,
-                            linkImagesToOriginal: true,
-                            withWebp: true,
-                            withAvif: true,
-                            tracedSVG: true,
-                            loading: 'lazy',
-                        },
-                    },
                     {
                         resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
                         options: {

@@ -279,9 +279,10 @@ const HomePage = ({ data }) => {
             </div>
         )
     })
+
     return (
         <Layout>
-            <Seo />
+            <Seo image={Image.images.fallback.src} />
             <div className="home-banner grids col-1 sm-2">
                 <div>
                     <h1 className="title">{frontmatter.title}</h1>
