@@ -13,7 +13,7 @@ My proficiency lies not just with high-level frameworks and libraries but also
 in core programming and problem-solving. So, you can have peace of mind while I
 am working on turning your ideas into reality.
 
-![Picture of Anup](/assets/anupdhakal.jpg)
+![Picture of Anup](anupdhakal.jpg)
 
 ### Why you should choose me
 
