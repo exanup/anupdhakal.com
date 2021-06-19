@@ -25,5 +25,6 @@ a {
   text-decoration: none;
   &:hover {
     color: var(--home-link-hover-color);
+    text-decoration: underline;
   }
 }
