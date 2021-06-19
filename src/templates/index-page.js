@@ -93,7 +93,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiMailFill />
                     </a>
@@ -104,7 +104,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiFacebookBoxFill />
                     </a>
@@ -115,7 +115,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiTwitterFill />
                     </a>
@@ -126,7 +126,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiLinkedinBoxFill />
                     </a>
@@ -137,7 +137,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiYoutubeFill />
                     </a>
@@ -148,7 +148,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiInstagramFill />
                     </a>
@@ -159,7 +159,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiRssFill />
                     </a>
@@ -170,7 +170,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiGithubFill />
                     </a>
@@ -181,7 +181,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiTelegramFill />
                     </a>
@@ -192,7 +192,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiPinterestFill />
                     </a>
@@ -203,7 +203,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiSnapchatFill />
                     </a>
@@ -214,7 +214,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiSkypeFill />
                     </a>
@@ -225,7 +225,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <FaWordpress />
                     </a>
@@ -236,7 +236,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiDribbbleFill />
                     </a>
@@ -247,7 +247,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiMediumFill />
                     </a>
@@ -258,7 +258,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <RiBehanceFill />
                     </a>
@@ -269,7 +269,7 @@ const HomePage = ({ data }) => {
                     <a
                         href={icons.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                     >
                         <FaVk />
                     </a>
