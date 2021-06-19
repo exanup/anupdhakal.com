@@ -245,6 +245,11 @@ article img {
     line-height: 1.5;
     font-size: 20px;
     font-family: var(--font-family-serif);
+    &.description {
+        max-width: 58ch;
+        font-size: 24px;
+        padding-bottom: 0;
+    }
 }
 figure {
     display: block;
