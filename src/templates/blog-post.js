@@ -116,6 +116,8 @@ const Post = ({ data, pageContext }) => {
                     <p>{description}</p>
                 </div>
 
+                <hr />
+
                 <div
                     className="blog-post-content"
                     dangerouslySetInnerHTML={{ __html: html }}
