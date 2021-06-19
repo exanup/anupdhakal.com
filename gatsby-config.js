@@ -109,6 +109,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-sass`,
+        'gatsby-plugin-catch-links',
         `gatsby-plugin-react-helmet`,
         'gatsby-plugin-theme-ui',
         `gatsby-plugin-netlify-cms`,
