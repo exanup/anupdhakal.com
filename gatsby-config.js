@@ -12,6 +12,16 @@ const netlifyCmsPaths = {
 
 const settings = require('./src/util/site.json')
 
+const {
+    NODE_ENV,
+    URL: NETLIFY_SITE_URL = settings.meta.siteUrl,
+    DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+    CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+
+const isNetlifyProduction = NETLIFY_ENV === 'production'
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+
 module.exports = {
     siteMetadata: settings.meta,
     plugins: [
@@ -115,8 +125,8 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-robots-txt',
             options: {
-                host: settings.meta.siteUrl,
-                sitemap: `${settings.meta.siteUrl}/sitemap`,
+                host: siteUrl,
+                sitemap: `${siteUrl}/sitemap`,
                 resolveEnv: () => NETLIFY_ENV,
                 env: {
                     production: {
