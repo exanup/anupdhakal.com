@@ -13,8 +13,8 @@
         "url": "https://github.com/exanup/anupdhakal.com/issues"
     },
     "engines": {
-        "node": "^14.17.1",
-        "yarn": "^1.22.10"
+        "node": "^16.13.1",
+        "yarn": "^1.22.17"
     },
     "scripts": {
         "clean": "gatsby clean",
