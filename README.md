@@ -7,3 +7,7 @@ My personal blog, shamelessly "inspired" from and based upon
 
 To run locally, `yarn`, then `yarn start`, then open
 [http://localhost:8000](http://localhost:8000).
+
+> You need to have [fnm](https://github.com/Schniz/fnm) installed for easy
+> nodejs versioning. Or make sure you have nodejs version installed as mentioned
+> in [`package.json`](./package.json).
