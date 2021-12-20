@@ -10,6 +10,6 @@ cta:
 ---
 
 He is a Kathmandu-based software engineer, who loves working remotely! Currently
-at [Penji](https://www.penjiapp.com/). Previously at
+employed at [Penji](https://www.penjiapp.com/). Previously at
 [Leapfrog](https://www.lftechnology.com/),
 [Microsoft](https://www.microsoft.com), and [Technorio](https://technorio.com/).

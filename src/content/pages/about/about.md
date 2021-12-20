@@ -2,6 +2,12 @@
 template: about-page
 slug: /about
 title: About me
+featuredImage: anupdhakal.jpg
+description:
+    Software engineer highly proficient with JavaScript • Bachelor's degree in
+    Computer Engineering, Tribhuvan University • 5+ years of professional
+    experience in software services • Been speaking the language of computers
+    since the age of 14
 ---
 
 Software engineer highly proficient with JavaScript. Bachelor's degree in
