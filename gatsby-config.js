@@ -78,7 +78,7 @@ module.exports = {
                         resolve: `gatsby-remark-table-of-contents`,
                         options: {
                             exclude: 'Table of Contents',
-                            tight: false,
+                            tight: true,
                             ordered: true,
                             fromHeading: 2,
                             toHeading: 6,
@@ -113,7 +113,7 @@ module.exports = {
                             classPrefix: 'language-',
                             inlineCodeMarker: null,
                             aliases: {},
-                            showLineNumbers: false,
+                            showLineNumbers: true,
                             noInlineHighlight: false,
                             // By default the HTML entities <>&'" are escaped.
                             // Add additional HTML escapes by providing a mapping
