@@ -5,13 +5,13 @@ title: About me
 featuredImage: anupdhakal.jpg
 description:
     Software engineer highly proficient with JavaScript • Bachelor's degree in
-    Computer Engineering, Tribhuvan University • 5+ years of professional
+    Computer Engineering, Tribhuvan University • 6+ years of professional
     experience in software services • Been speaking the language of computers
     since the age of 14
 ---
 
 Software engineer highly proficient with JavaScript. Bachelor's degree in
-Computer Engineering, Tribhuvan University. 5+ years of professional experience
+Computer Engineering, Tribhuvan University. 6+ years of professional experience
 in software services. Been speaking the language of computers since the age
 of 14.
 
@@ -47,7 +47,8 @@ am working on turning your ideas into reality.
 
 -   General purpose - JavaScript, TypeScript
 -   Frontend - HTML5, CSS3, SASS/SCSS, LESS, JQuery, decent understanding of UX
--   Frameworks - ReactJS, LitElement, LitHtml, PolymerJS, Custom Web Components
+-   Frameworks - ReactJS, ReduxJS, LitElement, LitHtml, PolymerJS, Custom Web
+    Components
 -   Backend - NodeJS, ExpressJS, MySQL/MariaDB, PostgreSQL
 -   Tooling - Webpack, Git, Linters, Bash, Github Actions, CI/CD, Docker
 -   Hosting - Netlify, Heroku, Vercel, AWS, Github Pages
