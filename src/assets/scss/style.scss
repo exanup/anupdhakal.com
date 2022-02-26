@@ -249,7 +249,7 @@ article img {
     font-size: 20px;
     font-family: var(--font-family-serif);
     &.description {
-        text-align: center;
+        text-align: left;
         max-width: 58ch;
         font-size: 24px;
         padding-bottom: 0;
@@ -478,4 +478,5 @@ hr {
 
 // Libraries
 @import 'lib/prism-default';
+@import 'lib/prism-monokai';
 @import 'lib/prism-line-numbers';
