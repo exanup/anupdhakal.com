@@ -22,15 +22,13 @@
         "develop": "gatsby develop",
         "build": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
         "serve": "gatsby serve",
-        "format": "prettier --write \"**/*.{js,jsx,json,md,yml,html,scss}\"",
+        "format": "prettier --check --ignore-unknown \"**/*.*\"",
+        "format:fix": "prettier --write --ignore-unknown \"**/*.*\"",
         "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
         "prepare": "husky install"
     },
     "lint-staged": {
-        "**/*.{js,jsx,json,md,yml,html,scss}": [
-            "prettier --write",
-            "git add"
-        ]
+        "**/*.*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
         "@emotion/react": "^11.8.1",
@@ -64,8 +62,6 @@
         "gatsby-source-filesystem": "^4.8.1",
         "gatsby-transformer-remark": "^5.8.1",
         "gatsby-transformer-sharp": "^4.8.0",
-        "husky": "^7.0.4",
-        "lint-staged": "^12.3.4",
         "netlify-cms-app": "2.15.66",
         "prismjs": "^1.27.0",
         "react": "^17.0.2",
@@ -74,5 +70,10 @@
         "react-icons": "^4.3.1",
         "sass": "^1.49.9",
         "theme-ui": "^0.13.1"
+    },
+    "devDependencies": {
+        "husky": "^7.0.4",
+        "lint-staged": "^12.3.4",
+        "prettier": "^2.5.1"
     }
 }
