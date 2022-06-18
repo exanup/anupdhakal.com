@@ -33,7 +33,7 @@
     "dependencies": {
         "@emotion/react": "^11.8.1",
         "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^3.0.2",
-        "@mdx-js/react": "^2.0.0",
+        "@mdx-js/react": "^2.1.2",
         "@netlify/plugin-gatsby": "^2.0.4",
         "@theme-ui/color": "^0.13.1",
         "gatsby": "^4.8.1",
