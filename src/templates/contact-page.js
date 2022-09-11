@@ -51,8 +51,14 @@ const Contact = ({ data }) => {
                     name="contact"
                     method="POST"
                     data-netlify="true"
-                    data-netlify-honeypot="bot-field"
+                    netlify-honeypot="bot-field"
                 >
+                    <p className="hidden" aria-hidden="true">
+                        <label>
+                            Do not fill this out if you are a human:{' '}
+                            <input name="bot-field" />
+                        </label>
+                    </p>
                     <input type="hidden" name="form-name" value="contact" />
                     <p>
                         <label>

@@ -2,6 +2,10 @@
 @import 'defaults';
 @import 'lib/css-grid-utility';
 
+.hidden {
+    position: absolute;
+    left: -99999px;
+}
 // .primary-container {
 // 	display: grid;
 // 	grid-template-rows: 60px auto 60px;
